@@ -37,7 +37,7 @@ export default function Home() {
         </form>
       </section>
       <footer className="w-screen h-16 flex justify-center items-center border-t-2 border-dark-100">
-        <p className="text-white">Made with 💖 by @devanshdeveloper</p>
+        <p className="text-white">Made with ♥ by @devanshdeveloper</p>
       </footer>
     </>
   );
