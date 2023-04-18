@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import InputField, { Textarea } from "@/components/InputField";
+import ProjectCard from "@/components/ProjectCard";
 import SocialMediaIcon from "@/components/SocialMediaIcon";
 import Image from "next/image";
 import {
@@ -43,17 +44,22 @@ export default function Home() {
         <div className="lg:col-span-3 space-y-2">
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
-            Hello, I&apos;m Devansh Khetwani, a web developer specializing in React
-            JS, Next.js, Tailwind, and Stripe. I&apos;m passionate about creating
-            custom solutions that meet your unique needs, and I have a track
-            record of delivering engaging and intuitive user experiences. Let&apos;s
-            work together to bring your vision to life. Browse my portfolio and
-            reach out to me to discuss your project.
+            Hello, I&apos;m Devansh Khetwani, a web developer specializing in
+            React JS, Next.js, Tailwind, and Stripe. I&apos;m passionate about
+            creating custom solutions that meet your unique needs, and I have a
+            track record of delivering engaging and intuitive user experiences.
+            Let&apos;s work together to bring your vision to life. Browse my
+            portfolio and reach out to me to discuss your project.
           </p>
         </div>
       </section>
-      <section id="projects" className="h-screen p-10">
-          <h3 className="section-heading">Projects</h3>
+      <section id="projects" className="p-10">
+        <h3 className="section-heading">Projects</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-3  max-w-5xl mx-auto">
+          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
+          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
+          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
+        </div>
       </section>
       <section id="contact" className="border-t-2 border-b-2 border-dark-100">
         <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">

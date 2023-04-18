@@ -1,10 +1,38 @@
 import Image from "next/image";
-import React from "react";
+import Button from "./Button";
 
-function ProjectCard({ src, title, href, techStack }) {
+function ProjectCard({ github, title, href, techStack }) {
   return (
-    <div>
-      <Image {...{ src }} alt={title} />
+    <div className="bg-dark-700 rounded-md p-2 border-2 border-white">
+      <Image
+        src={`/${title}.png`}
+        width="300"
+        height="150"
+        className="w-full rounded-lg"
+        alt={title}
+      />
+      <h3 className="text-white text-2xl mt-1">{title}</h3>
+      <div className="space-x-1">
+        {techStack.map((tech, i) => (
+          <div key={i} className="bg-dark-50 inline-block px-2 py-1 rounded-lg">
+            <Image
+              src={`/${tech}-svg.svg`}
+              width="30"
+              height="30"
+              alt={tech}
+              className="h-5 w-5"
+            />
+          </div>
+        ))}
+      </div>
+      <div className="space-x-1">
+        <a className="text-white bg-dark-900 px-1 py-0.5 rounded-md" {...{ href }} target="_blank">
+          Open
+        </a>
+        <a className="text-white bg-dark-900 px-1 py-0.5 rounded-md" href={github} target="_blank">
+          GitHub
+        </a>
+      </div>
     </div>
   );
 }

@@ -9,9 +9,9 @@ function Navbar() {
       >
         devanshdeveloper
       </Link>
-      <ul className="flex gap-10">
+      {/* <ul className="flex gap-10">
         <NavLink href="#contact">Contact</NavLink>
-      </ul>
+      </ul> */}
     </div>
   );
 }
