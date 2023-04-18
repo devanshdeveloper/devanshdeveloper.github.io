@@ -44,9 +44,9 @@ export default function Home() {
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
             Hello, I&apos;m Devansh Khetwani, a web developer specializing in React
-            JS, Next.js, Tailwind, and Stripe. I'm passionate about creating
+            JS, Next.js, Tailwind, and Stripe. I&apos;m passionate about creating
             custom solutions that meet your unique needs, and I have a track
-            record of delivering engaging and intuitive user experiences. Let's
+            record of delivering engaging and intuitive user experiences. Let&apos;s
             work together to bring your vision to life. Browse my portfolio and
             reach out to me to discuss your project.
           </p>
