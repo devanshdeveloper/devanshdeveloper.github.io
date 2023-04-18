@@ -43,7 +43,7 @@ export default function Home() {
         <div className="lg:col-span-3 space-y-2">
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
-            Hello, I'm Devansh Khetwani, a web developer specializing in React
+            Hello, I&apos;m Devansh Khetwani, a web developer specializing in React
             JS, Next.js, Tailwind, and Stripe. I'm passionate about creating
             custom solutions that meet your unique needs, and I have a track
             record of delivering engaging and intuitive user experiences. Let's
