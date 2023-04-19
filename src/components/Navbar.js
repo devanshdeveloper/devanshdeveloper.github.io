@@ -7,11 +7,13 @@ function Navbar() {
         href="#home"
         className="text-dark-50 text-lg lg:text-2xl font-medium hover:text-brand-default transition-all duration-200"
       >
-        devanshdeveloper
+        DevanshDeveloper
       </Link>
-      {/* <ul className="flex gap-10">
+      <ul className="flex gap-10">
+        <NavLink href="#projects">About Me</NavLink>
+        <NavLink href="#about">About Me</NavLink>
         <NavLink href="#contact">Contact</NavLink>
-      </ul> */}
+      </ul>
     </div>
   );
 }
@@ -21,7 +23,11 @@ export default Navbar;
 function NavLink({ href, children }) {
   return (
     <li className="">
-      <Link className="text-white font-light hover:text-dark-50" href={href}>
+      <Link
+        className="text-white font-light hover:text-dark-50"
+        href={href}
+        scroll={false}
+      >
         {children}
       </Link>
     </li>

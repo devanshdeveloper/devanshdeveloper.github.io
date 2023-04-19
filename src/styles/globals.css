@@ -13,6 +13,14 @@ body {
   @apply bg-dark-900 font-poppins overflow-x-hidden;
 }
 
+.btn {
+  @apply px-4 py-2  focus:outline-none transition-all duration-200 transform uppercase tracking-wide;
+}
+
+.btn-default {
+  @apply bg-brand-default  hover:bg-brand-dark;
+}
+
 .section-heading {
   @apply text-3xl font-bold text-brand-default uppercase -tracking-tight;
 }

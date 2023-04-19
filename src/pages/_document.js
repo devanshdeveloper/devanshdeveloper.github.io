@@ -8,9 +8,7 @@ export default function Document() {
           name="description"
           content="Devansh Khetwani Portfolio"
         />
-        <title>
-          devanshdeveloper
-        </title>
+
       </Head>
       <body>
         <Main />

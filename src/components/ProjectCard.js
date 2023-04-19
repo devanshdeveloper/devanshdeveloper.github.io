@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Button from "./Button";
+import Link from "next/link";
 
-function ProjectCard({ github, title, href, techStack }) {
+function ProjectCard({ github, title, techStack }) {
   return (
-    <div className="bg-dark-700 rounded-md p-2 border-2 border-white">
+    <div className="bg-dark-700 rounded-md p-2 border border-white hover:border-brand-default transition-all duration-200">
       <Image
         src={`/${title}.png`}
         width="300"
@@ -26,10 +26,17 @@ function ProjectCard({ github, title, href, techStack }) {
         ))}
       </div>
       <div className="space-x-2 my-1">
-        <a className="text-white bg-dark-900 px-2 py-1 rounded-md" {...{ href }} target="_blank">
-          Open
-        </a>
-        <a className="text-white bg-dark-900 px-2 py-1 rounded-md" href={github} target="_blank">
+        <Link
+          className="text-white bg-dark-900 px-2 py-1 rounded-md"
+          href={`/projects/${title.toLowerCase()}`}
+        >
+          View
+        </Link>
+        <a
+          className="text-white bg-dark-900 px-2 py-1 rounded-md"
+          href={github}
+          target="_blank"
+        >
           GitHub
         </a>
       </div>

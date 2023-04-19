@@ -1,18 +1,17 @@
-import Button from "@/components/Button";
 import InputField, { Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
-import SocialMediaIcon from "@/components/SocialMediaIcon";
-import { projects } from "@/utilities";
+import Testimonial from "@/components/Testimonial";
+import { projects, testimonials } from "@/utilities";
+import Head from "next/head";
 import Image from "next/image";
-import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>devanshdeveloper</title>
+      </Head>
       <section
         id="home"
         className="h-screen relative top-[-64px] flex justify-around items-center"
@@ -27,7 +26,12 @@ export default function Home() {
           <p className="text-dark-50">
             I help businesses to connect with tech.
           </p>
-          <Button>Get in touch</Button>
+          <Link
+            className="btn btn-default -translate-y-3 mt-6 inline-block"
+            href="#"
+          >
+            Get in touch
+          </Link>
         </div>
         <div>0</div>
       </section>
@@ -37,7 +41,7 @@ export default function Home() {
       >
         <Image
           className="lg:col-span-2 rounded-md hover:scale-110 transition-all duration-200"
-          src="/profile.jpg"
+          src="/profile.png"
           width="200"
           height="200"
           alt="Devansh Khetwani"
@@ -56,13 +60,28 @@ export default function Home() {
       </section>
       <section id="projects" className="p-10">
         <h3 className="section-heading">Projects</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-3  max-w-5xl mx-auto">
-          {projects.map((project , i) => (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+          {projects.slice(0, 3).map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}
         </div>
+        {projects.length > 3 && (
+          <div className="flex justify-center">
+            <Link href="/projects" className="btn btn-default">
+              See More
+            </Link>
+          </div>
+        )}
       </section>
-      <section id="contact" className="border-t-2 border-b-2 border-dark-100">
+      <section id="testimonial" className="p-10 bg-dark-700">
+        <h3 className="section-heading">Testimonial</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+          {testimonials.map((testimonial) => (
+            <Testimonial {...testimonial} />
+          ))}
+        </div>
+      </section>
+      <section id="contact" className="border-t-2 border-dark-100">
         <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">
           <h3 className="section-heading mb-4">Get in touch</h3>
           <form
@@ -73,33 +92,12 @@ export default function Home() {
             <InputField name="name" label="Name" />
             <InputField name="email" label="Email" type="email" />
             <Textarea name="desc" label="How can I help you?" rows="7" />
-            <Button type="submit">Send Message</Button>
+            <button className="btn btn-default" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
-      <footer className="w-screen p-4 flex justify-center items-center flex-col gap-2">
-        <p className="text-white">
-          Made with ♥ by
-          <a
-            href="https://instagram.com/devanshdeveloper/"
-            target="_blank"
-            className="hover:underline ml-1"
-          >
-            @devanshdeveloper
-          </a>
-        </p>
-        <ul className="flex gap-3">
-          <SocialMediaIcon href="https://instagram.com/devanshdeveloper/">
-            <AiOutlineInstagram />
-          </SocialMediaIcon>
-          <SocialMediaIcon href="https://github.com/devanshdeveloper/">
-            <AiOutlineGithub />
-          </SocialMediaIcon>
-          <SocialMediaIcon href="https://www.linkedin.com/in/devansh-khetwani/">
-            <AiOutlineLinkedin />
-          </SocialMediaIcon>
-        </ul>
-      </footer>
     </>
   );
 }
