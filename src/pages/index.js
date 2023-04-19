@@ -28,7 +28,8 @@ export default function Home() {
           </p>
           <Link
             className="btn btn-default -translate-y-3 mt-6 inline-block"
-            href="#"
+            scroll={false}
+            href="#contact"
           >
             Get in touch
           </Link>

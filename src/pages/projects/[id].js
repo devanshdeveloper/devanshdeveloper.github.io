@@ -39,6 +39,7 @@ function Project() {
             className="btn btn-default inline-flex items-center gap-1"
             // className="text-white bg-dark-400 transition duration-200 text-xl px-3 py-2 rounded-md hover:bg-dark-700 inline-block"
             href={project.href}
+            target="_blank"
           >
             <MdOpenInNew className="translate-y-[-0.125rem]" /> Open
           </a>

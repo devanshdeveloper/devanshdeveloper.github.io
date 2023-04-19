@@ -2,9 +2,10 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-screen h-16 bg-dark-800 flex items-center justify-between px-10 md:px-20 lg:px-40 z-10 sticky top-0 left-0 shadow-md rounded-lg">
+    <div className="w-screen h-16 bg-dark-800 flex items-center justify-between px-10 md:px-20 lg:px-40 z-10 fixed top-0 left-0 shadow-md rounded-lg">
       <Link
         href="#home"
+        scroll={false}
         className="text-dark-50 text-lg lg:text-2xl font-medium hover:text-brand-default transition-all duration-200"
       >
         DevanshDeveloper
