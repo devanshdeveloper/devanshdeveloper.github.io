@@ -10,9 +10,9 @@ function Navbar() {
         DevanshDeveloper
       </Link>
       <ul className="flex gap-10">
-        <NavLink href="#projects">About Me</NavLink>
+        {/* <NavLink href="#projects">About Me</NavLink>
         <NavLink href="#about">About Me</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
+        <NavLink href="#contact">Contact</NavLink> */}
       </ul>
     </div>
   );
