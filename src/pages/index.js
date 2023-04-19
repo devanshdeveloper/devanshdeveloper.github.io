@@ -76,8 +76,8 @@ export default function Home() {
       <section id="testimonial" className="p-10 bg-dark-700">
         <h3 className="section-heading">Testimonial</h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
-          {testimonials.map((testimonial) => (
-            <Testimonial {...testimonial} />
+          {testimonials.map((testimonial, i) => (
+            <Testimonial key={i} {...testimonial} />
           ))}
         </div>
       </section>
