@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import InputField, { Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
 import SocialMediaIcon from "@/components/SocialMediaIcon";
+import { projects } from "@/utilities";
 import Image from "next/image";
 import {
   AiOutlineInstagram,
@@ -56,9 +57,9 @@ export default function Home() {
       <section id="projects" className="p-10">
         <h3 className="section-heading">Projects</h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-3  max-w-5xl mx-auto">
-          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
-          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
-          <ProjectCard href="http://nextjs-firebase-auth-friendbro.vercel.app/" techStack={["nextjs" , "firebase" , "tailwind"]} title="NextChat"/>
+          {projects.map((project , i) => (
+            <ProjectCard key={i} {...project} />
+          ))}
         </div>
       </section>
       <section id="contact" className="border-t-2 border-b-2 border-dark-100">

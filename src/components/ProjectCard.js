@@ -12,7 +12,7 @@ function ProjectCard({ github, title, href, techStack }) {
         alt={title}
       />
       <h3 className="text-white text-2xl mt-1">{title}</h3>
-      <div className="space-x-1">
+      <div className="space-x-1 my-2">
         {techStack.map((tech, i) => (
           <div key={i} className="bg-dark-50 inline-block px-2 py-1 rounded-lg">
             <Image
@@ -25,11 +25,11 @@ function ProjectCard({ github, title, href, techStack }) {
           </div>
         ))}
       </div>
-      <div className="space-x-1">
-        <a className="text-white bg-dark-900 px-1 py-0.5 rounded-md" {...{ href }} target="_blank">
+      <div className="space-x-2 my-1">
+        <a className="text-white bg-dark-900 px-2 py-1 rounded-md" {...{ href }} target="_blank">
           Open
         </a>
-        <a className="text-white bg-dark-900 px-1 py-0.5 rounded-md" href={github} target="_blank">
+        <a className="text-white bg-dark-900 px-2 py-1 rounded-md" href={github} target="_blank">
           GitHub
         </a>
       </div>
