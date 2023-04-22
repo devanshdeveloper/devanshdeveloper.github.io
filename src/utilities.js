@@ -21,6 +21,43 @@ export const projects = [
     Overall, NextChat is a fast, intuitive, and secure web application that offers a great way to connect with people and build meaningful relationships online. Whether you&apos;re looking to stay in touch with family and friends, or meet new people from around the world, NextChat has everything you need to stay connected and engaged.
     `,
   },
+  {
+    github: "https://github.com/devanshdeveloper/keyboard-game",
+    title: "Keyboard Game",
+    href: "https://devanshdeveloper.github.io/keyboard-game",
+    techStack: ["javascript"],
+    desciption: `Welcome to the Keyboard Game, a fun and interactive game built using Javascript! This game is designed to help you improve your typing speed and accuracy, while having fun at the same time.
+    <br /> <br/>
+    The game is easy to play - simply type the words that appear on the screen as quickly and accurately as possible. You can choose your own speed, ranging from beginner to advanced levels, to suit your typing skills.
+    <br /> <br/>
+    To make the game more enjoyable, we have also included a light mode for those who prefer a brighter and more colorful interface.
+    <br /> <br/>
+    As you type, your speed and accuracy will be displayed in real time on the screen. This will help you to track your progress and see how you are improving over time.
+    <br /> <br/>
+    So, what are you waiting for? Get ready to put your typing skills to the test with the Keyboard Game, and see how fast and accurate you can type!`,
+  },
+  {
+    github: "https://github.com/devanshdeveloper/link-manager-react",
+    title: "Link Manager",
+    href: "https://devanshdeveloper.github.io/links",
+    techStack: ["react"],
+    desciption: `Introducing the Link Manager, a powerful tool built using React JS and Bootstrap to help you manage your links with ease! With this application, you can save your links into different categories and set a specific time for them to open.
+    <br /> <br/>
+    Managing links has never been easier! You can easily categorize your links into different groups, such as work-related, personal, entertainment, or anything else that suits your needs. You can also add new categories and delete existing ones as per your preference.
+    <br /> <br/>
+    One of the unique features of this link manager is the ability to schedule the time when you want your links to open. For example, if you have a link related to work that you need to open every morning, you can set it to automatically open at a specific time every day. This feature will help you to save time and increase your productivity by having all your necessary links ready to go.
+    <br /> <br/>
+    With the user-friendly interface of Bootstrap, you can easily navigate through your links and categories. The application is also designed to be mobile-friendly, allowing you to manage your links on the go.
+    <br /> <br/>
+    In summary, the Link Manager built using React JS and Bootstrap is a powerful tool that makes managing your links easier than ever before. Whether you're looking to organize your links, schedule their opening time, or just keep everything in one place, this application has got you covered!`,
+  },
+  // {
+  //   github: "",
+  //   title: "",
+  //   href: "",
+  //   techStack: [],
+  //   desciption: ``,
+  // },
 ];
 
 export const testimonials = [
