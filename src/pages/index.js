@@ -20,7 +20,7 @@ export default function Home() {
           <h3 className="text-white font-medium text-md lg:text-2xl">
             Hey, This is
           </h3>
-          <span className="text-brand-default text-5xl lg:text-6xl font-bold">
+          <span className="text-brand-default text-5xl lg:text-8xl font-semibold font-bruno">
             Devansh
           </span>
           <p className="text-dark-50">
@@ -59,9 +59,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="projects" className="p-10">
+      <section id="projects" className="h-[calc(100vh-64px)] flex flex-col items-center justify-evenly">
         <h3 className="section-heading">Projects</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}

@@ -14,11 +14,17 @@ export default function Document() {
           content="web develoeper, web development, nextjs , javascript"
         />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="theme-color" content="#1fe" />
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="manifest" href="/manifest.json"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <body>
         <Main />
