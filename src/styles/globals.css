@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   transition: all 200ms;
   scroll-padding-top: 64px;
+  /* cursor: none; */
 }
 
 body {

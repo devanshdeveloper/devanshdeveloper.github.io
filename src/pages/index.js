@@ -1,10 +1,12 @@
 import InputField, { Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
+import TechnologyGlow from "@/components/TechnologyGlow";
 import Testimonial from "@/components/Testimonial";
 import { projects, testimonials } from "@/utilities";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { CgScrollV } from "react-icons/cg";
 
 export default function Home() {
   return (
@@ -12,41 +14,45 @@ export default function Home() {
       <Head>
         <title>devanshdeveloper</title>
       </Head>
-      <section
-        id="home"
-        className="h-screen relative top-[-64px] flex justify-around items-center"
-      >
-        <div className="mx-8">
-          <h3 className="text-white font-medium text-md lg:text-2xl">
-            Hey, This is
-          </h3>
-          <span className="text-brand-default text-5xl lg:text-8xl font-semibold font-bruno">
-            Devansh
-          </span>
-          <p className="text-dark-50">
-            I help businesses to connect with tech.
-          </p>
-          <Link
-            className="btn btn-default -translate-y-3 mt-6 inline-block"
-            scroll={false}
-            href="#contact"
-          >
-            Get in touch
-          </Link>
+      <section id="home" className="h-screen relative top-[-64px] ">
+        <div className="flex flex-col lg:flex-row justify-center gap-20 lg:justify-around items-center h-full">
+          <div className="mx-8">
+            <h3 className="text-white font-medium text-md lg:text-2xl">
+              Hey, This is
+            </h3>
+            <span className="text-brand-default text-5xl lg:text-8xl font-semibold font-bruno">
+              Devansh
+            </span>
+            <p className="text-dark-50">
+              I help businesses to connect with tech.
+            </p>
+            <Link
+              className="btn btn-default -translate-y-3 mt-6 inline-block"
+              scroll={false}
+              href="#contact"
+            >
+              Get in touch
+            </Link>
+          </div>
+          <div className="animate-spin-slow grid grid-cols-2 gap-5 lg:gap-10">
+         <TechnologyGlow tech="javascript"/>
+         <TechnologyGlow tech="react"/>
+         <TechnologyGlow tech="html"/>
+         <TechnologyGlow tech="css"/>
+          </div>
         </div>
-        <div>0</div>
+        <div className="flex justify-center">
+          <CgScrollV className="text-dark-50 text-3xl animate-bounce absolute bottom-20 lg:bottom-10" />
+        </div>
       </section>
       <section
         id="about"
         className="bg-dark-700 grid grid-cols-1 gap-10 lg:grid-cols-5 place-items-center p-10 lg:p-20"
       >
-        <Image
-          className="lg:col-span-2 rounded-md hover:scale-110 transition-all duration-200"
-          src="/profile.png"
-          width="200"
-          height="200"
-          alt="Devansh Khetwani"
-        />
+        <div className="lg:col-span-2 hover:scale-110 transition-all duration-200 bg-[url('/profile.png')] bg-no-repeat bg-cover rounded">
+          <div className=" bg-brand-dark/30 h-52 w-52 rounded hover:bg-transparent transition-all duration-300"></div>
+        </div>
+
         <div className="lg:col-span-3 space-y-2">
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
@@ -59,9 +65,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="projects" className="h-[calc(100vh-64px)] flex flex-col items-center justify-evenly">
+      <section id="projects" className="p-10 lg:p-16 space-y-20">
         <h3 className="section-heading">Projects</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}

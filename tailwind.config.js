@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+        'spin-slow-reserve': 'spin 5s linear infinite reverse',
+      },
       screens: {
         xs: "400px",
       },

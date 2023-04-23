@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function ProjectCard({ github, title, techStack }) {
   return (
-    <div className="bg-dark-700 rounded-md p-2 border border-white hover:border-brand-default transition-all duration-200">
+    <div className="bg-dark-700 rounded-md p-2 border border-white hover:border-brand-default hover:-translate-y-4 transition-all duration-200">
       <Image
         src={`/${title}.png`}
         width="300"
