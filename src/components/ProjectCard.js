@@ -14,9 +14,9 @@ function ProjectCard({ github, title, techStack }) {
       <h3 className="text-white text-2xl mt-1">{title}</h3>
       <div className="space-x-1 my-2">
         {techStack.map((tech, i) => (
-          <div key={i} className="bg-dark-50 inline-block px-2 py-1 rounded-lg">
+          <div key={i} className="bg-dark-900 inline-block px-2 py-1 rounded">
             <Image
-              src={`/${tech}-svg.svg`}
+              src={`/${tech}.svg`}
               width="30"
               height="30"
               alt={tech}
@@ -27,13 +27,13 @@ function ProjectCard({ github, title, techStack }) {
       </div>
       <div className="space-x-2 my-1">
         <Link
-          className="text-white bg-dark-900 px-2 py-1 rounded-md"
+          className="text-white bg-dark-900 px-2 py-1 rounded"
           href={`/projects/${title.toLowerCase()}`}
         >
           View
         </Link>
         <a
-          className="text-white bg-dark-900 px-2 py-1 rounded-md"
+          className="text-white bg-dark-900 px-2 py-1 rounded"
           href={github}
           target="_blank"
         >
