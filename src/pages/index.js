@@ -89,14 +89,14 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      <section id="services" className="p-10 bg-dark-700">
+      {/* <section id="services" className="p-10 bg-dark-700">
         <h3 className="section-heading">Services</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={i} {...service} />
           ))}
         </div>
-      </section>
+      </section> */}
       <section id="contact" className="border-t-2 border-dark-100">
         <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">
           <h3 className="section-heading mb-4">Get in touch</h3>
