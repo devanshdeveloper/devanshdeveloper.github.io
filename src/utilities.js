@@ -91,3 +91,21 @@ export const testimonials = [
     portfolio and reach out to me to discuss your project.`,
   },
 ];
+
+export const services = [
+  {
+    name: "Figma to HTML",
+    img: "figma to html",
+    description: ``,
+  },
+  {
+    name: "Web Development",
+    img: "web development",
+    description: ``,
+  },
+  // {
+  //   name: "Figma to HTML",
+  //   img: "figma to html",
+  //   description: ``,
+  // },
+];

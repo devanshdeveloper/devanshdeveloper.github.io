@@ -1,8 +1,9 @@
 import InputField, { Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
+import ServiceCard from "@/components/ServiceCard";
 import TechnologyGlow from "@/components/TechnologyGlow";
 import Testimonial from "@/components/Testimonial";
-import { projects, testimonials } from "@/utilities";
+import { projects, services, testimonials } from "@/utilities";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,20 +30,20 @@ export default function Home() {
             <Link
               className="btn btn-default -translate-y-3 mt-6 inline-block"
               scroll={false}
-              href="#contact"
+              href="#about"
             >
-              Get in touch
+              Know Me
             </Link>
           </div>
-          <div className="animate-spin-slow grid grid-cols-2 gap-5 lg:gap-10">
-         <TechnologyGlow tech="javascript"/>
-         <TechnologyGlow tech="react"/>
-         <TechnologyGlow tech="html"/>
-         <TechnologyGlow tech="css"/>
+          <div className="animate-spin-slow grid grid-cols-2 gap-10 lg:gap-20">
+            <TechnologyGlow tech="javascript" />
+            <TechnologyGlow tech="react" />
+            <TechnologyGlow tech="firebase" />
+            <TechnologyGlow tech="tailwind" />
           </div>
         </div>
         <div className="flex justify-center">
-          <CgScrollV className="text-dark-50 text-3xl animate-bounce absolute bottom-20 lg:bottom-10" />
+          <CgScrollV className="text-dark-50 text-3xl animate-bounce absolute bottom-[10%]" />
         </div>
       </section>
       <section
@@ -67,7 +68,7 @@ export default function Home() {
       </section>
       <section id="projects" className="p-10 lg:p-16 space-y-20">
         <h3 className="section-heading">Projects</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}
@@ -82,12 +83,20 @@ export default function Home() {
       </section>
       {/* <section id="testimonial" className="p-10 bg-dark-700">
         <h3 className="section-heading">Testimonial</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
           {testimonials.map((testimonial, i) => (
             <Testimonial key={i} {...testimonial} />
           ))}
         </div>
       </section> */}
+      <section id="services" className="p-10 bg-dark-700">
+        <h3 className="section-heading">Services</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+          {services.map((service, i) => (
+            <ServiceCard key={i} {...service} />
+          ))}
+        </div>
+      </section>
       <section id="contact" className="border-t-2 border-dark-100">
         <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">
           <h3 className="section-heading mb-4">Get in touch</h3>

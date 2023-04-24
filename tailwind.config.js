@@ -10,6 +10,7 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 5s linear infinite',
         'spin-slow-reserve': 'spin 5s linear infinite reverse',
+        'spin-slow-reserve-and-pulse': 'spin 5s linear infinite reverse, pulse 20s linear infinite',
       },
       screens: {
         xs: "400px",

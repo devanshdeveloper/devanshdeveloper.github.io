@@ -24,3 +24,13 @@ body {
 .section-heading {
   @apply text-3xl font-bold text-brand-default uppercase -tracking-tight font-bruno;
 }
+
+@keyframes glow {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
