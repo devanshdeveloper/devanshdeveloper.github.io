@@ -99,9 +99,14 @@ export const services = [
     description: ``,
   },
   {
-    name: "Web Development",
+    name: "Web Application",
     img: "web development",
     description: ``,
+  },
+  {
+    name: "And Many More...",
+    // img: "web development",
+    description: `I also provide services like Web Design, Web Hoisting, Web optimization etc.`,
   },
   // {
   //   name: "Figma to HTML",

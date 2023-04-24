@@ -1,4 +1,4 @@
-import InputField, { Textarea } from "@/components/InputField";
+import InputField, { SelectInput, Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
 import ServiceCard from "@/components/ServiceCard";
 import TechnologyGlow from "@/components/TechnologyGlow";
@@ -89,14 +89,14 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      {/* <section id="services" className="p-10 bg-dark-700">
+      <section id="services" className="p-10 bg-dark-700">
         <h3 className="section-heading">Services</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={i} {...service} />
           ))}
         </div>
-      </section> */}
+      </section>
       <section id="contact" className="border-t-2 border-dark-100">
         <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">
           <h3 className="section-heading mb-4">Get in touch</h3>
@@ -107,7 +107,25 @@ export default function Home() {
           >
             <InputField name="name" label="Name" />
             <InputField name="email" label="Email" type="email" />
-            <Textarea name="desc" label="How can I help you?" rows="7" />
+            <div className="flex flex-col md:flex-row gap-5  w-full md:w-2/3">
+              <SelectInput
+                label="What you need?"
+                name="service"
+                options={[
+                  "",
+                  "Portfolio Website",
+                  "Figma to HTML",
+                  "Landing Page",
+                  "Web Application",
+                ]}
+              />
+              <SelectInput
+                label="What's Your Budget?"
+                name="budget"
+                options={["", "$0-$500", "$500-$5000", "$5000+"]}
+              />
+            </div>
+            <Textarea name="desc" label="Need to Say Something?" rows="7" />
             <button className="btn btn-default" type="submit">
               Send Message
             </button>

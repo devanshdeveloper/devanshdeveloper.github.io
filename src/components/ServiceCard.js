@@ -3,12 +3,17 @@ import React from "react";
 
 function ServiceCard({ name, img, description }) {
   return (
-    <div className="bg-dark-900 text-white rounded-lg p-10 border hover:border-brand-dark transition-all duration-200 flex flex-col gap-5">
-      <div className="flex justify-center">
-        <Image src={`/${img}.png`}  height={150} width={300} />
-      </div>
-      <h3 className="font-medium text-center text-lg">{name}</h3>
-      {/* <p dangerouslySetInnerHTML={{ __html: description }}></p> */}
+    <div className="bg-dark-900 text-white rounded-lg p-7 group border hover:border-brand-dark hover:scale-110 transition-all duration-300 flex flex-col gap-5 items-center">
+      {img && (
+        <Image
+          src={`/${img}.png`}
+          className="w-5/6 object-contain aspect-[3/2]"
+          height={150}
+          width={300}
+        />
+      )}
+      <h3 className="font-medium text-center text-lg group-hover:text-brand-default transition-all duration-300">{name}</h3>
+      <p dangerouslySetInnerHTML={{ __html: description }}></p>
     </div>
   );
 }
