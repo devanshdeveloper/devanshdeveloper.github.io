@@ -42,7 +42,7 @@ function Navbar() {
       >
         <div className="flex items-center justify-between w-full">
           <Link
-            href="#home"
+            href="/#home"
             scroll={false}
             className="text-dark-50 text-lg lg:text-2xl font-medium hover:text-brand-default transition-all duration-200"
           >

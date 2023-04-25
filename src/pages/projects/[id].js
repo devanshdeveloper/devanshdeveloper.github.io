@@ -19,9 +19,9 @@ function Project() {
       <Head>
         <title>{project.title} || DevanshDeveloper</title>
       </Head>
-      <div className="p-10  max-w-4xl mx-auto">
+      <div className="p-10  max-w-4xl mx-auto space-y-4">
         <h3 className="section-heading">{project.title}</h3>
-        <div className="max-w-2xl my-4">
+        <div className="max-w-2xl">
           <Image
             src={`/${project.title}.png`}
             width="600"
@@ -30,14 +30,22 @@ function Project() {
             alt={project.title}
           />
         </div>
-        <div
-          className="text-white lg:text-xl"
-          dangerouslySetInnerHTML={{ __html: project.desciption }}
-        ></div>
-        <div className="space-x-3 mt-5">
+        <div className="space-x-4">
+          {project.techStack.map((tech, i) => (
+            <div key={i} className="bg-dark-700 inline-block px-3 py-1 rounded">
+              <Image
+                src={`/${tech}.svg`}
+                width="100"
+                height="100"
+                alt={tech}
+                className="h-10 w-10"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="space-x-3">
           <a
             className="btn btn-default inline-flex items-center gap-1"
-            // className="text-white bg-dark-400 transition duration-200 text-xl px-3 py-2 rounded-md hover:bg-dark-700 inline-block"
             href={project.href}
             target="_blank"
           >
@@ -45,13 +53,16 @@ function Project() {
           </a>
           <a
             className="btn btn-default inline-flex items-center gap-1"
-            // className="text-white bg-dark-400 transition duration-200 text-xl px-3 py-2 rounded-md hover:bg-dark-700 inline-block"
             href={project.github}
             target="_blank"
           >
             <AiOutlineGithub className="translate-y-[-0.125rem]" /> GitHub
           </a>
         </div>
+        <div
+          className="text-white lg:text-xl"
+          dangerouslySetInnerHTML={{ __html: project.desciption }}
+        ></div>
       </div>
     </>
   );
