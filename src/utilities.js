@@ -5,11 +5,11 @@ export const projects = [
     href: "https://nextjs-firebase-auth-friendbro.vercel.app/",
     techStack: ["nextjs", "firebase", "tailwind"],
     desciption: `NextChat is a modern web application that has been built using the latest web development technologies like Next.js, Tailwind CSS, and Firebase. The application is designed to facilitate seamless communication between users across the globe in real-time. With NextChat, you can connect with people, build meaningful relationships, and stay connected with your friends and family from anywhere in the world.
-     <br /><br />
-     The application has been developed using Next.js, which is a popular React-based framework that provides server-side rendering, automatic code splitting, and optimized performance out of the box. This ensures that NextChat loads fast and is highly responsive, delivering a seamless user experience.
-     <br /><br />
-     
-     The user interface of NextChat is built using Tailwind CSS, which is a highly customizable CSS framework that enables developers to quickly create beautiful and responsive user interfaces. With Tailwind CSS, NextChat has an intuitive and aesthetically pleasing design that is easy to use and navigate.
+    <br /><br />
+    The application has been developed using Next.js, which is a popular React-based framework that provides server-side rendering, automatic code splitting, and optimized performance out of the box. This ensures that NextChat loads fast and is highly responsive, delivering a seamless user experience.
+    <br /><br />
+    
+    The user interface of NextChat is built using Tailwind CSS, which is a highly customizable CSS framework that enables developers to quickly create beautiful and responsive user interfaces. With Tailwind CSS, NextChat has an intuitive and aesthetically pleasing design that is easy to use and navigate.
      <br /><br />
      
      NextChat leverages Firebase, a popular cloud-based platform, to provide a reliable and scalable back-end infrastructure. Firebase offers real-time data synchronization, automatic scaling, and secure user authentication, enabling NextChat to deliver a highly reliable and secure experience to its users.
@@ -17,8 +17,8 @@ export const projects = [
      
      With NextChat, users can create profiles, search for other users, and initiate private chats with individuals or groups. The application also offers real-time messaging, so you can instantly communicate with your contacts, and receive notifications when someone messages you. In addition, NextChat offers features like emojis, file sharing, and video calls to make conversations even more engaging and fun.
      <br /><br />
-    
-    Overall, NextChat is a fast, intuitive, and secure web application that offers a great way to connect with people and build meaningful relationships online. Whether you&apos;re looking to stay in touch with family and friends, or meet new people from around the world, NextChat has everything you need to stay connected and engaged.
+     
+     Overall, NextChat is a fast, intuitive, and secure web application that offers a great way to connect with people and build meaningful relationships online. Whether you&apos;re looking to stay in touch with family and friends, or meet new people from around the world, NextChat has everything you need to stay connected and engaged.
     `,
   },
   {
@@ -50,6 +50,21 @@ export const projects = [
     With the user-friendly interface of Bootstrap, you can easily navigate through your links and categories. The application is also designed to be mobile-friendly, allowing you to manage your links on the go.
     <br /> <br/>
     In summary, the Link Manager built using React JS and Bootstrap is a powerful tool that makes managing your links easier than ever before. Whether you're looking to organize your links, schedule their opening time, or just keep everything in one place, this application has got you covered!`,
+  },
+  {
+    github: "https://github.com/devanshdeveloper/devanshdeveloper.github.io",
+    title: "Portfolio",
+    href: "https://devanshdeveloper.vercel.app/",
+    techStack: ["nextjs", "tailwind"],
+    desciption: `Devansh's portfolio website is a beautifully designed and highly functional platform built using Next.js and Tailwind. The website showcases Devansh's skills, projects, and services in a clear and concise manner. The website's design is both modern and professional, making it easy for visitors to navigate and find what they are looking for.
+    <br /> <br/>
+    The website's homepage greets visitors with a brief introduction to Devansh's work and services. It features a clean and minimalist design that emphasizes the most important aspects of the website. Visitors can quickly learn about Devansh's skills and services, including web development, graphic design, and SEO optimization.
+    <br /> <br/>
+    The portfolio section of the website showcases Devansh's best work, including websites, logos, and other graphic design projects. Each project has a detailed description and showcases the various skills and techniques used in its creation. Visitors can easily browse through the portfolio section to get a sense of Devansh's style and expertise.
+    <br /> <br/>
+    In addition to showcasing his work, Devansh's website also provides information about his services. Visitors can learn about his web development and design services, SEO optimization, and other related services. Each service has a detailed description, outlining the scope of the work and the benefits of hiring Devansh.
+    <br /> <br/>
+    Overall, Devansh's portfolio website is a well-designed and highly functional platform that effectively showcases his skills, projects, and services. The use of Next.js and Tailwind provides a seamless and engaging user experience, making it easy for visitors to learn about Devansh's work and get in touch with him.`,
   },
   {
     github: "",
