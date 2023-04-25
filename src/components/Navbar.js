@@ -22,7 +22,7 @@ function Navbar() {
       <li className="group">
         <Link
           onClick={() => setSidebaropen(false)}
-          className="text-white text-xl lg:text-3xl font-light hover:text-dark-50"
+          className="text-white text-xl lg:text-3xl font-bruno font-light hover:text-brand-default transition-all duration-200"
           href={href}
           scroll={false}
         >
@@ -59,16 +59,16 @@ function Navbar() {
           >
             <button
               onClick={() => setSidebaropen(false)}
-              className="btn btn-default text-2xl absolute top-[10%] right-[10%]"
+              className="btn btn-default cursor-pointer text-2xl absolute top-[10%] right-[10%]"
             >
               <RxCross1 />
             </button>
             <ul className="space-y-10">
-              <NavLink href="#home">Home</NavLink>
-              <NavLink href="#about">About Me</NavLink>
-              <NavLink href="#projects">Projects</NavLink>
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#contact">Get In Touch</NavLink>
+              <NavLink href="/#home">Home</NavLink>
+              <NavLink href="/#about">About Me</NavLink>
+              <NavLink href="/#projects">Projects</NavLink>
+              <NavLink href="/#services">Services</NavLink>
+              <NavLink href="/#contact">Get In Touch</NavLink>
             </ul>
           </div>
         </div>

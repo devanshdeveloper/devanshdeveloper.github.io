@@ -48,7 +48,7 @@ export default function Home() {
       </section>
       <section
         id="about"
-        className="bg-dark-700 grid grid-cols-1 gap-10 lg:grid-cols-5 place-items-center p-10 lg:p-20"
+        className="bg-dark-700 grid grid-cols-1 gap-10 lg:grid-cols-5 place-items-center p-10 lg:p-20 "
       >
         <div className="lg:col-span-2 hover:scale-110 transition-all duration-200 bg-[url('/profile.png')] bg-no-repeat bg-cover rounded">
           <div className=" bg-brand-dark/30 h-52 w-52 rounded hover:bg-transparent transition-all duration-300"></div>
@@ -66,7 +66,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="projects" className="p-10 lg:p-16 space-y-20">
+      <section id="projects" className="p-10 lg:p-16  space-y-10  lg:space-y-20">
         <h3 className="section-heading">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
@@ -89,7 +89,7 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      <section id="services" className="p-10 lg:p-16 bg-dark-700  space-y-20">
+      <section id="services" className="p-10 lg:p-16 bg-dark-700  space-y-10  lg:space-y-20">
         <h3 className="section-heading">Services</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {services.map((service, i) => (
