@@ -2,6 +2,7 @@ import useEventListener from "@/hooks/useEventListener";
 import Link from "next/link";
 import { useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
+import { RxCross1 } from "react-icons/rx";
 
 function Navbar() {
   const scrollY = typeof window !== "undefined" ? window.scrollY : 0;
@@ -15,6 +16,22 @@ function Navbar() {
   useEventListener("scroll", (e) => {
     setPageScrolled(window.scrollY);
   });
+
+  function NavLink({ href, children }) {
+    return (
+      <li className="group">
+        <Link
+          onClick={() => setSidebaropen(false)}
+          className="text-white text-xl lg:text-3xl font-light hover:text-dark-50"
+          href={href}
+          scroll={false}
+        >
+          {children}
+        </Link>
+        <div className="h-1 w-0 hover:w-full bg-brand-default"></div>
+      </li>
+    );
+  }
 
   return (
     <>
@@ -31,15 +48,29 @@ function Navbar() {
           >
             DevanshDeveloper
           </Link>
-          {/* <BiMenuAltLeft className="text-white text-2xl" />
-          <div className="absolute top-0 left-0 h-screen flex items-center p-52 w-screen bg-dark-900">
+          <BiMenuAltLeft
+            className="text-white text-2xl"
+            onClick={() => setSidebaropen(true)}
+          />
+          <div
+            className={`absolute top-0 ${
+              sidebaropen ? "left-0" : "left-[100%]"
+            } h-screen flex items-center p-10 sm:p-20 md:p-30 lg:p-52 w-screen bg-dark-900 z-50 transition-all duration-300`}
+          >
+            <button
+              onClick={() => setSidebaropen(false)}
+              className="btn btn-default text-2xl absolute top-[10%] right-[10%]"
+            >
+              <RxCross1 />
+            </button>
             <ul className="space-y-10">
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="#home">Home</NavLink>
               <NavLink href="#about">About Me</NavLink>
               <NavLink href="#projects">Projects</NavLink>
-              <NavLink href="#contact">Contact</NavLink>
+              <NavLink href="#services">Services</NavLink>
+              <NavLink href="#contact">Get In Touch</NavLink>
             </ul>
-          </div> */}
+          </div>
         </div>
         <div
           className="h-1 absolute bottom-0 left-0 bg-brand-default rounded"
@@ -51,18 +82,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-function NavLink({ href, children }) {
-  return (
-    <li className="group">
-      <Link
-        className="text-white text-3xl font-light hover:text-dark-50"
-        href={href}
-        scroll={false}
-      >
-        {children}
-      </Link>
-      <div className="h-1 w-0 hover:w-full bg-brand-default"></div>
-    </li>
-  );
-}

@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         )}
       </section>
-      {/* <section id="testimonial" className="p-10 bg-dark-700">
+      {/* <section id="testimonial" className="p-10 lg:p-16 bg-dark-700">
         <h3 className="section-heading">Testimonial</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
           {testimonials.map((testimonial, i) => (
@@ -89,16 +89,16 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      <section id="services" className="p-10 bg-dark-700">
+      <section id="services" className="p-10 lg:p-16 bg-dark-700  space-y-20">
         <h3 className="section-heading">Services</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={i} {...service} />
           ))}
         </div>
       </section>
-      <section id="contact" className="border-t-2 border-dark-100">
-        <div className="bg-dark-700 p-10 max-w-5xl mx-auto ">
+      <section id="contact" className="border-t-2  border-dark-100">
+        <div className="bg-dark-700 space-y-10 p-10 lg:p-16 max-w-5xl mx-auto ">
           <h3 className="section-heading mb-4">Get in touch</h3>
           <form
             className="space-y-4"

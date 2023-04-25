@@ -16,7 +16,6 @@ function InputField({ name, label, ...props }) {
 }
 export function SelectInput({ name, label, options, ...props }) {
 
-  console.log(options );
   return (
     <div>
       <label htmlFor={name} className="text-white text-xl">

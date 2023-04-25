@@ -6,7 +6,7 @@ import {
 import SocialMediaIcon from "@/components/SocialMediaIcon";
 function Footer() {
   return (
-    <footer className="w-screen p-4 flex justify-center items-center flex-col gap-2 border-t-2 border-dark-100">
+    <footer className="w-screen p-7 flex justify-center items-center flex-col gap-3 border-t-2 border-dark-100">
       <p className="text-white">
         Made with ♥ by
         <a
