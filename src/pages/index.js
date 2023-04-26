@@ -1,12 +1,11 @@
 import InputField, { SelectInput, Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
-import { Reveal } from "@/components/Reveal";
 import ServiceCard from "@/components/ServiceCard";
 import TechnologyGlow from "@/components/TechnologyGlow";
-// import Testimonial from "@/components/Testimonial";
+import Testimonial from "@/components/Testimonial";
 import { projects, services, testimonials } from "@/utilities";
 import Head from "next/head";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineSend } from "react-icons/ai";
 import { CgScrollV } from "react-icons/cg";
@@ -19,7 +18,7 @@ export default function Home() {
       </Head>
       <section id="home" className="h-screen relative top-[-64px] ">
         <div className="flex flex-col lg:flex-row justify-center gap-20 lg:justify-around items-center h-full">
-          <Reveal className="mx-8">
+          <div className="mx-8">
             <h3 className="text-white font-medium text-md lg:text-2xl">
               Hey, This is
             </h3>
@@ -36,15 +35,13 @@ export default function Home() {
             >
               Know Me
             </Link>
-          </Reveal>
-          <Reveal className="animate-spin-slow grid grid-cols-2 gap-10 lg:gap-20">
+          </div>
+          <div className="animate-spin-slow grid grid-cols-2 gap-10 lg:gap-20">
             <TechnologyGlow tech="javascript" />
             <TechnologyGlow tech="react" />
             <TechnologyGlow tech="firebase" />
             <TechnologyGlow tech="tailwind" />
-            {/* <TechnologyGlow tech="html" /> */}
-            {/* <TechnologyGlow tech="css" /> */}
-          </Reveal>
+          </div>
         </div>
         <div className="flex justify-center">
           <CgScrollV className="text-dark-50 text-3xl animate-bounce absolute bottom-[10%]" />
@@ -54,15 +51,11 @@ export default function Home() {
         id="about"
         className="bg-dark-700 grid grid-cols-1 gap-10 lg:grid-cols-5 place-items-center p-10 lg:p-20 "
       >
-        <Reveal
-          axis="x"
-          value="-100"
-          className="lg:col-span-2 hover:scale-110 transition-all duration-200 bg-[url('/profile.png')] bg-no-repeat bg-cover rounded"
-        >
+        <div className="lg:col-span-2 hover:scale-110 transition-all duration-200 bg-[url('/profile.png')] bg-no-repeat bg-cover rounded">
           <div className=" bg-brand-dark/30 h-52 w-52 rounded hover:bg-transparent transition-all duration-300"></div>
-        </Reveal>
+        </div>
 
-        <Reveal axis="x" className="lg:col-span-3 space-y-2">
+        <div className="lg:col-span-3 space-y-2">
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
             Hello, I&apos;m Devansh Khetwani, a web developer specializing in
@@ -72,24 +65,21 @@ export default function Home() {
             Let&apos;s work together to bring your vision to life. Browse my
             portfolio and reach out to me to discuss your project.
           </p>
-        </Reveal>
+        </div>
       </section>
-      <section
-        id="projects"
-        className="p-10 lg:p-16  space-y-10  lg:space-y-20"
-      >
+      <section id="projects" className="p-10 lg:p-16  space-y-10  lg:space-y-20">
         <h3 className="section-heading">Projects</h3>
-        <Reveal className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
             <ProjectCard key={i} {...project} />
           ))}
-        </Reveal>
+        </div>
         {projects.length > 3 && (
-          <Reveal className="flex justify-center">
+          <div className="flex justify-center">
             <Link href="/projects" className="btn btn-default">
               See More
             </Link>
-          </Reveal>
+          </div>
         )}
       </section>
       {/* <section id="testimonial" className="p-10 lg:p-16 bg-dark-700">
@@ -100,16 +90,13 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      <section
-        id="services"
-        className="p-10 lg:p-16 bg-dark-700  space-y-10  lg:space-y-20"
-      >
+      <section id="services" className="p-10 lg:p-16 bg-dark-700  space-y-10  lg:space-y-20">
         <h3 className="section-heading">Services</h3>
-        <Reveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={i} {...service} />
           ))}
-        </Reveal>
+        </div>
       </section>
       <section id="contact" className="border-t-2  border-dark-100">
         <div className="bg-dark-700 space-y-10 p-10 lg:p-16 max-w-5xl mx-auto ">
@@ -140,10 +127,7 @@ export default function Home() {
               />
             </div>
             <Textarea name="desc" label="Need to Say Something?" rows="7" />
-            <button
-              className="btn btn-default flex items-center gap-2"
-              type="submit"
-            >
+            <button className="btn btn-default flex gap-2 items-center" type="submit">
               Send Message <AiOutlineSend />
             </button>
           </form>
