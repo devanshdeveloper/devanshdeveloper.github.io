@@ -40,7 +40,7 @@ function Navbar() {
           pageScrolled > 150 ? "h-20" : "h-16"
         } bg-dark-800/70 flex items-center backdrop-blur-md px-10 md:px-20 lg:px-40 z-10 fixed top-0 left-0 shadow-md rounded-lg transition-all duration-300`}
       >
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full h-full">
           <Link
             href="/#home"
             scroll={false}
