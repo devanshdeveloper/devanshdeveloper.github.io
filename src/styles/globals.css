@@ -10,7 +10,9 @@ html {
 }
 
 body {
-  @apply bg-dark-900 font-poppins overflow-x-hidden pt-16;
+  @apply font-poppins overflow-x-hidden pt-16;
+  background-image: radial-gradient(#1b8386 1px, theme("colors.dark.900") 0);
+  background-size: 40px 40px;
 }
 
 .btn {

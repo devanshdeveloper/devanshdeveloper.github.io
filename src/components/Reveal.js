@@ -1,34 +1,37 @@
-import React, { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
-export const Reveal = ({
+function Reveal({
   children,
-  width = "fit-content",
-  axis = "y",
-  value = "100",
+  visible = "translate-x-0",
+  hidden = "-translate-x-24",
+  className,
   ...props
-}) => {
-  const mainControls = useAnimation();
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
+}) {
+  const containerRef = useRef();
+  const [isOnScreen, setIsOnScreen] = useState(false);
 
   useEffect(() => {
-    mainControls.start(isInView ? "visible" : "hidden");
-  }, [isInView, mainControls]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        console.log(entries);
+        setIsOnScreen(entries[0].isIntersecting);
+      },
+      { threshold: 1 }
+    );
+    observer.observe(containerRef.current);
+  }, []);
 
   return (
-    <motion.div
+    <div
       ref={containerRef}
+      className={`${className} ${
+        isOnScreen ? "opacity-100 " + visible : "opacity-0 " + hidden
+      }`}
       {...props}
-      variants={{
-        hidden: { opacity: 0, [axis]: +value },
-        visible: { opacity: 1, [axis]: 0 },
-      }}
-      initial="hidden"
-      animate={mainControls}
-      transition={{ duration: 0.5, delay: 0.25 }}
     >
       {children}
-    </motion.div>
+    </div>
   );
-};
+}
+
+export default Reveal;
