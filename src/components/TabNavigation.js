@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default ({ tabs, setCurrentTabIndex, currentTabIndex }) => {
+export default function TabNavigation({
+  tabs,
+  setCurrentTabIndex,
+  currentTabIndex,
+}) {
   return (
     <div className="text-white bg-dark-900 p-1.5 gap-1.5 flex rounded flex-col md:flex-row shadow-xl">
       {tabs.map((tab, i) => {
@@ -18,7 +22,7 @@ export default ({ tabs, setCurrentTabIndex, currentTabIndex }) => {
       })}
     </div>
   );
-};
+}
 
 export const Tab = ({ isActive, children, techStack = [] }) => {
   return (
