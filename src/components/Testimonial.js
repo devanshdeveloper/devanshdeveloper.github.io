@@ -9,6 +9,7 @@ function Testimonial({ profilePic, attestant, testimonialContent }) {
           className="rounded-full"
           height={40}
           width={40}
+          alt={attestant}
         />
         <h3 className="font-semibold text-lg">{attestant}</h3>
       </div>

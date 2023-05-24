@@ -10,6 +10,7 @@ function ServiceCard({ name, img, description }) {
           className="w-5/6 object-contain aspect-[3/2]"
           height={150}
           width={300}
+          alt={img}
         />
       )}
       <h3 className="font-medium text-center text-lg group-hover:text-brand-default transition-all duration-300">{name}</h3>

@@ -28,8 +28,14 @@ export const Tab = ({ isActive, children, techStack = [] }) => {
       } bg-dark-900 text-white w-full md:w-3/4 p-10 rounded  shadow-xl`}
     >
       <div className="flex gap-5 mb-5">
-        {techStack.map((tech) => (
-          <Image src={`/techstack/${tech}.svg`} width="60" height="60" alt={tech} />
+        {techStack.map((tech, i) => (
+          <Image
+            key={i}
+            src={`/techstack/${tech}.svg`}
+            width="60"
+            height="60"
+            alt={tech}
+          />
         ))}
       </div>
       {children}
