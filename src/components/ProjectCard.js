@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function ProjectCard({ github, title, techStack }) {
   return (
-    <div className="bg-dark-700 rounded-md p-2 border border-white hover:border-brand-default hover:-translate-y-4 transition-all duration-200">
+    <div className="bg-dark-700 rounded-md p-2 border border-white hover:border-brand-default hover:-translate-y-4 transition-all duration-200 shadow-2xl">
       <Image
-        src={`/${title}.png`}
+        src={`/projects/${title}.png`}
         width="300"
         height="150"
         className="w-full rounded-lg"
@@ -16,7 +16,7 @@ function ProjectCard({ github, title, techStack }) {
         {techStack.map((tech, i) => (
           <div key={i} className="bg-dark-900 inline-block px-2 py-1 rounded">
             <Image
-              src={`/${tech}.svg`}
+              src={`/techstack/${tech}.svg`}
               width="30"
               height="30"
               alt={tech}

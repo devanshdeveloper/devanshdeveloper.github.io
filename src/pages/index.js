@@ -1,16 +1,20 @@
 import InputField, { SelectInput, Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
 import ServiceCard from "@/components/ServiceCard";
+import TabNavigation, { Tab } from "@/components/TabNavigation";
 import TechnologyGlow from "@/components/TechnologyGlow";
 import Testimonial from "@/components/Testimonial";
 import { projects, services, testimonials } from "@/utilities";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { AiOutlineSend } from "react-icons/ai";
 import { CgScrollV } from "react-icons/cg";
 
 export default function Home() {
+  const [currentTabIndex, setCurrentTabIndex] = useState(0);
+
   return (
     <>
       <Head>
@@ -67,7 +71,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="projects" className="p-10 lg:p-16  space-y-10  lg:space-y-20">
+      <section id="projects" className="p-10 lg:p-16 space-y-10 lg:space-y-20">
         <h3 className="section-heading">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16  max-w-5xl mx-auto">
           {projects.slice(0, 3).map((project, i) => (
@@ -82,6 +86,31 @@ export default function Home() {
           </div>
         )}
       </section>
+      <section
+        id="skills"
+        className="p-10 lg:p-16 bg-dark-700 flex flex-col justify-center items-center gap-10"
+      >
+        <h3 className="section-heading">Skills</h3>
+        <TabNavigation
+          {...{ setCurrentTabIndex, currentTabIndex }}
+          tabs={["Figma", "HTML/CSS", "JS", "React JS", "Backend"]}
+        />
+        <Tab isActive={currentTabIndex === 0} techStack={["figma"]}>
+          Figma
+        </Tab>
+        <Tab isActive={currentTabIndex === 1} techStack={["html", "css"]}>
+          HTML/CSS
+        </Tab>
+        <Tab isActive={currentTabIndex === 2} techStack={["javascript"]}>
+          JS
+        </Tab>
+        <Tab isActive={currentTabIndex === 3} techStack={["react", "nextjs"]}>
+          React JS
+        </Tab>
+        <Tab isActive={currentTabIndex === 4} techStack={["firebase"]}>
+          Firebase
+        </Tab>
+      </section>
       {/* <section id="testimonial" className="p-10 lg:p-16 bg-dark-700">
         <h3 className="section-heading">Testimonial</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-8  max-w-5xl mx-auto">
@@ -90,7 +119,7 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-      <section id="services" className="p-10 lg:p-16 bg-dark-700  space-y-10  lg:space-y-20">
+      <section id="services" className="p-10 lg:p-16 space-y-10 lg:space-y-20">
         <h3 className="section-heading">Services</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {services.map((service, i) => (
@@ -103,7 +132,7 @@ export default function Home() {
           <h3 className="section-heading mb-4">Get in touch</h3>
           <form
             className="space-y-4"
-            action="https://formsubmit.co/devanshkhetwani@gmail.com"
+            action="https://formsubmit.io/send/devanshkhetwani@gmail.com"
             method="POST"
           >
             <InputField name="name" label="Name" />
@@ -127,7 +156,15 @@ export default function Home() {
               />
             </div>
             <Textarea name="desc" label="Need to Say Something?" rows="7" />
-            <button className="btn btn-default flex gap-2 items-center" type="submit">
+            <input
+              name="_formsubmit_id"
+              type="text"
+              style={{ display: "none" }}
+            />
+            <button
+              className="btn btn-default flex gap-2 items-center"
+              type="submit"
+            >
               Send Message <AiOutlineSend />
             </button>
           </form>

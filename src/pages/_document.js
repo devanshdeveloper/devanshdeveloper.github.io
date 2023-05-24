@@ -16,7 +16,7 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <meta name="theme-color" content="#1fe" />
+        <meta name="theme-color" content="#202020" />
         <link rel="shortcut icon" href="favicon.ico" />
         <link rel="manifest" href="/manifest.json"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

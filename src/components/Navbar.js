@@ -67,6 +67,7 @@ function Navbar() {
               <NavLink href="/#home">Home</NavLink>
               <NavLink href="/#about">About Me</NavLink>
               <NavLink href="/#projects">Projects</NavLink>
+              <NavLink href="/#skills">Skills</NavLink>
               <NavLink href="/#services">Services</NavLink>
               <NavLink href="/#contact">Get In Touch</NavLink>
             </ul>
