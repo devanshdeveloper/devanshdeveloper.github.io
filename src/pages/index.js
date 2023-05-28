@@ -80,7 +80,7 @@ export default function Home() {
             goals thanks to my sharp eye for detail and love for
             problem-solving. My speciality is in designing engaging and simple
             user interfaces that create a long lasting impression on your
-            audience. Let&aposs work together to make your ideas a reality. Please
+            audience. Let&apos;s work together to make your ideas a reality. Please
             feel free to look over my portfolio and contact me to discuss the
             specifics of your project.
           </p>
@@ -114,13 +114,13 @@ export default function Home() {
           With expertise in Figma, I am proficient in designing visually
           appealing and user-centric interfaces. I can create wireframes,
           prototypes, and high-fidelity designs that enhance the overall user
-          experience. By leveraging Figma&aposs collaborative features, I ensure
+          experience. By leveraging Figma&apos;s collaborative features, I ensure
           seamless communication and efficient design iterations throughout the
           project lifecycle.
         </Tab>
         <Tab isActive={currentTabIndex === 1} techStack={["html", "css"]}>
           I have extensive knowledge of HTML and CSS, enabling me to craft
-          pixel-perfect and responsive web pages. Whether it&aposs structuring the
+          pixel-perfect and responsive web pages. Whether it&apos;s structuring the
           content or styling the layout, I follow the best practices to ensure
           cross-browser compatibility, accessibility, and clean code. I stay up
           to date with the latest HTML and CSS specifications and utilize modern
@@ -135,16 +135,16 @@ export default function Home() {
         </Tab>
         <Tab isActive={currentTabIndex === 3} techStack={["react", "nextjs"]}>
           With hands-on experience in React JS and Next.js, I specialize in
-          building powerful and scalable web applications. I utilize React&aposs
+          building powerful and scalable web applications. I utilize React&apos;s
           component-based architecture, state management, and virtual DOM, along
-          with Next.js&aposs server-side rendering (SSR) capabilities. This
+          with Next.js&apos;s server-side rendering (SSR) capabilities. This
           combination allows me to create fast, SEO-friendly, and highly
           optimized web applications with improved performance and user
           experience.
         </Tab>
         <Tab isActive={currentTabIndex === 4} techStack={["firebase"]}>
           I am proficient in working with Firebase, a comprehensive platform for
-          building web and mobile applications. I can leverage Firebase&aposs
+          building web and mobile applications. I can leverage Firebase&apos;s
           features like Firestore database, Authentication, Cloud Functions, and
           Hosting to develop secure and scalable backend solutions. I have
           experience in setting up real-time data synchronization, user
@@ -191,7 +191,7 @@ export default function Home() {
                 ]}
               />
               <SelectInput
-                label="What&aposs Your Budget?"
+                label="What&apos;s Your Budget?"
                 name="budget"
                 options={["", "$0-$500", "$500-$5000", "$5000+"]}
               />
