@@ -49,22 +49,22 @@ export const projects = [
     <br /> <br/>
     With the user-friendly interface of Bootstrap, you can easily navigate through your links and categories. The application is also designed to be mobile-friendly, allowing you to manage your links on the go.
     <br /> <br/>
-    In summary, the Link Manager built using React JS and Bootstrap is a powerful tool that makes managing your links easier than ever before. Whether you're looking to organize your links, schedule their opening time, or just keep everything in one place, this application has got you covered!`,
+    In summary, the Link Manager built using React JS and Bootstrap is a powerful tool that makes managing your links easier than ever before. Whether you&aposre looking to organize your links, schedule their opening time, or just keep everything in one place, this application has got you covered!`,
   },
   {
     github: "https://github.com/devanshdeveloper/devanshdeveloper.github.io",
     title: "Portfolio",
     href: "https://devanshdeveloper.vercel.app/",
     techStack: ["nextjs", "tailwind"],
-    desciption: `Devansh's portfolio website is a beautifully designed and highly functional platform built using Next.js and Tailwind. The website showcases Devansh's skills, projects, and services in a clear and concise manner. The website's design is both modern and professional, making it easy for visitors to navigate and find what they are looking for.
+    desciption: `Devansh&aposs portfolio website is a beautifully designed and highly functional platform built using Next.js and Tailwind. The website showcases Devansh&aposs skills, projects, and services in a clear and concise manner. The website&aposs design is both modern and professional, making it easy for visitors to navigate and find what they are looking for.
     <br /> <br/>
-    The website's homepage greets visitors with a brief introduction to Devansh's work and services. It features a clean and minimalist design that emphasizes the most important aspects of the website. Visitors can quickly learn about Devansh's skills and services, including web development, graphic design, and SEO optimization.
+    The website&aposs homepage greets visitors with a brief introduction to Devansh&aposs work and services. It features a clean and minimalist design that emphasizes the most important aspects of the website. Visitors can quickly learn about Devansh&aposs skills and services, including web development, graphic design, and SEO optimization.
     <br /> <br/>
-    The portfolio section of the website showcases Devansh's best work, including websites, logos, and other graphic design projects. Each project has a detailed description and showcases the various skills and techniques used in its creation. Visitors can easily browse through the portfolio section to get a sense of Devansh's style and expertise.
+    The portfolio section of the website showcases Devansh&aposs best work, including websites, logos, and other graphic design projects. Each project has a detailed description and showcases the various skills and techniques used in its creation. Visitors can easily browse through the portfolio section to get a sense of Devansh&aposs style and expertise.
     <br /> <br/>
-    In addition to showcasing his work, Devansh's website also provides information about his services. Visitors can learn about his web development and design services, SEO optimization, and other related services. Each service has a detailed description, outlining the scope of the work and the benefits of hiring Devansh.
+    In addition to showcasing his work, Devansh&aposs website also provides information about his services. Visitors can learn about his web development and design services, SEO optimization, and other related services. Each service has a detailed description, outlining the scope of the work and the benefits of hiring Devansh.
     <br /> <br/>
-    Overall, Devansh's portfolio website is a well-designed and highly functional platform that effectively showcases his skills, projects, and services. The use of Next.js and Tailwind provides a seamless and engaging user experience, making it easy for visitors to learn about Devansh's work and get in touch with him.`,
+    Overall, Devansh&aposs portfolio website is a well-designed and highly functional platform that effectively showcases his skills, projects, and services. The use of Next.js and Tailwind provides a seamless and engaging user experience, making it easy for visitors to learn about Devansh&aposs work and get in touch with him.`,
   },
   {
     github: "",
@@ -82,7 +82,7 @@ export const projects = [
     <br /> <br/>
     To further enhance your learning experience, you will also receive a PDF document for practice. This document contains additional questions and exercises to help you sharpen your JavaScript programming skills.
     <br /> <br/>
-    So, if you're ready to put your JavaScript knowledge to the test, try out the JavaScript Quiz today and see how you stack up against other JavaScript programmers!
+    So, if you&aposre ready to put your JavaScript knowledge to the test, try out the JavaScript Quiz today and see how you stack up against other JavaScript programmers!
     `,
   },
   // {
