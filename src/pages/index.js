@@ -1,6 +1,7 @@
 import InputField, { SelectInput, Textarea } from "@/components/InputField";
 import ProjectCard from "@/components/ProjectCard";
 import ServiceCard from "@/components/ServiceCard";
+import SocialMediaIcon from "@/components/SocialMediaIcon";
 import TabNavigation, { Tab } from "@/components/TabNavigation";
 import TechnologyGlow from "@/components/TechnologyGlow";
 import Testimonial from "@/components/Testimonial";
@@ -9,7 +10,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AiOutlineSend } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineSend } from "react-icons/ai";
 import { CgScrollV } from "react-icons/cg";
 
 export default function Home() {
@@ -18,11 +19,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>devanshdeveloper</title>
+        <title>Devansh | Web Developer 🚀</title>
       </Head>
       <section id="home" className="h-screen relative top-[-64px] ">
         <div className="flex flex-col lg:flex-row justify-center gap-20 lg:justify-around items-center h-full">
-          <div className="mx-8">
+          <div className="mx-8 space-y-2">
             <h3 className="text-white font-medium text-md lg:text-2xl">
               Hey, This is
             </h3>
@@ -32,12 +33,23 @@ export default function Home() {
             <p className="text-dark-50">
               I help businesses to connect with tech.
             </p>
+            <ul className="flex gap-3">
+              <SocialMediaIcon href="https://instagram.com/devanshdeveloper/">
+                <AiOutlineInstagram />
+              </SocialMediaIcon>
+              <SocialMediaIcon href="https://github.com/devanshdeveloper/">
+                <AiOutlineGithub />
+              </SocialMediaIcon>
+              <SocialMediaIcon href="https://www.linkedin.com/in/devansh-khetwani/">
+                <AiOutlineLinkedin />
+              </SocialMediaIcon>
+            </ul>
             <Link
-              className="btn btn-default -translate-y-3 mt-6 inline-block"
+              className="btn btn-default inline-block"
               scroll={false}
               href="#about"
             >
-              Know Me
+              Get to Know Me
             </Link>
           </div>
           <div className="animate-spin-slow grid grid-cols-2 gap-10 lg:gap-20">
@@ -62,12 +74,15 @@ export default function Home() {
         <div className="lg:col-span-3 space-y-2">
           <h3 className="section-heading">About Me</h3>
           <p className="text-white">
-            Hello, I&apos;m Devansh Khetwani, a web developer specializing in
-            React JS, Next.js, Tailwind, and Stripe. I&apos;m passionate about
-            creating custom solutions that meet your unique needs, and I have a
-            track record of delivering engaging and intuitive user experiences.
-            Let&apos;s work together to bring your vision to life. Browse my
-            portfolio and reach out to me to discuss your project.
+            Welcome! As a web developer with expertise in React JS, Next.js,
+            Tailwind, and Stripe, my name is Devansh Khetwani. I thrive in
+            creating specialised solutions that exactly match your business
+            goals thanks to my sharp eye for detail and love for
+            problem-solving. My speciality is in designing engaging and simple
+            user interfaces that create a long lasting impression on your
+            audience. Let's work together to make your ideas a reality. Please
+            feel free to look over my portfolio and contact me to discuss the
+            specifics of your project.
           </p>
         </div>
       </section>
@@ -93,22 +108,48 @@ export default function Home() {
         <h3 className="section-heading">Skills</h3>
         <TabNavigation
           {...{ setCurrentTabIndex, currentTabIndex }}
-          tabs={["Figma", "HTML/CSS", "JS", "React JS", "Backend"]}
+          tabs={["Figma", "HTML/CSS", "JavaScript", "React JS", "Backend"]}
         />
         <Tab isActive={currentTabIndex === 0} techStack={["figma"]}>
-          Figma
+          With expertise in Figma, I am proficient in designing visually
+          appealing and user-centric interfaces. I can create wireframes,
+          prototypes, and high-fidelity designs that enhance the overall user
+          experience. By leveraging Figma's collaborative features, I ensure
+          seamless communication and efficient design iterations throughout the
+          project lifecycle.
         </Tab>
         <Tab isActive={currentTabIndex === 1} techStack={["html", "css"]}>
-          HTML/CSS
+          I have extensive knowledge of HTML and CSS, enabling me to craft
+          pixel-perfect and responsive web pages. Whether it's structuring the
+          content or styling the layout, I follow the best practices to ensure
+          cross-browser compatibility, accessibility, and clean code. I stay up
+          to date with the latest HTML and CSS specifications and utilize modern
+          techniques to create engaging user interfaces.
         </Tab>
         <Tab isActive={currentTabIndex === 2} techStack={["javascript"]}>
-          JS
+          As a skilled JavaScript developer, I excel in implementing interactive
+          features and dynamic functionality. I leverage the power of JS
+          frameworks and libraries to create seamless user interactions, form
+          validation and animations. I am well-versed in ES6+ syntax, modular
+          coding, and optimizing JavaScript code for improved performance.
         </Tab>
         <Tab isActive={currentTabIndex === 3} techStack={["react", "nextjs"]}>
-          React JS
+          With hands-on experience in React JS and Next.js, I specialize in
+          building powerful and scalable web applications. I utilize React's
+          component-based architecture, state management, and virtual DOM, along
+          with Next.js's server-side rendering (SSR) capabilities. This
+          combination allows me to create fast, SEO-friendly, and highly
+          optimized web applications with improved performance and user
+          experience.
         </Tab>
         <Tab isActive={currentTabIndex === 4} techStack={["firebase"]}>
-          Firebase
+          I am proficient in working with Firebase, a comprehensive platform for
+          building web and mobile applications. I can leverage Firebase's
+          features like Firestore database, Authentication, Cloud Functions, and
+          Hosting to develop secure and scalable backend solutions. I have
+          experience in setting up real-time data synchronization, user
+          authentication, and managing cloud functions to enhance application
+          functionality.
         </Tab>
       </section>
       {/* <section id="testimonial" className="p-10 lg:p-16 bg-dark-700">

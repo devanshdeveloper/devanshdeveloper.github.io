@@ -3,7 +3,7 @@ function SocialMediaIcon({ children, href }) {
     <li>
       <a
         target="_blank"
-        className="text-white text-2xl hover:text-brand-dark transition-all duration-200"
+        className="text-white text-3xl hover:text-brand-dark transition-all duration-200"
         {...{ href }}
       >
         {children}

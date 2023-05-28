@@ -10,8 +10,8 @@ export default function TabNavigation({
       {tabs.map((tab, i) => {
         return (
           <div
-            className={`cursor-pointer bg-dark-700 px-8 py-4 hover:text-brand-default duration-500 transition-all text-center  ${
-              currentTabIndex === i ? "text-brand-default" : ""
+            className={`cursor-pointer px-8 py-4 hover:text-brand-default hover:bg-dark-800 duration-300 transition-all text-center ${
+              currentTabIndex === i ? "text-brand-default bg-dark-800" : "bg-dark-700"
             }`}
             key={i}
             onClick={() => setCurrentTabIndex(i)}
@@ -29,7 +29,7 @@ export const Tab = ({ isActive, children, techStack = [] }) => {
     <div
       className={`${
         isActive ? "block" : "hidden"
-      } bg-dark-900 text-white w-full md:w-3/4 p-10 rounded  shadow-xl`}
+      } bg-dark-900 text-white w-full sm:w-3/4 md:w-1/2 p-10 rounded  shadow-xl`}
     >
       <div className="flex gap-5 mb-5">
         {techStack.map((tech, i) => (

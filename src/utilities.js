@@ -111,17 +111,17 @@ export const services = [
   {
     name: "Figma to HTML",
     img: "figma to html",
-    description: ``,
+    description: `Transforming your Figma designs into fully functional and visually stunning websites.`,
   },
   {
     name: "Web Application",
     img: "web development",
-    description: ``,
+    description: `Crafting custom web solutions that meet your specific business requirements.`,
   },
   {
-    name: "And Many More...",
-    // img: "web development",
-    description: `I also provide services like Web Design, Web Hoisting, Web optimization etc.`,
+    name: "Web Design",
+    img: "web design",
+    description: `Creating visually stunning and captivating web designs that make a lasting impression.`,
   },
   // {
   //   name: "Figma to HTML",
