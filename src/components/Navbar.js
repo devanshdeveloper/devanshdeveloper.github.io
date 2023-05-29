@@ -13,7 +13,7 @@ function Navbar() {
   const [pageScrolled, setPageScrolled] = useState(scrollY);
   const [sidebaropen, setSidebaropen] = useState(false);
 
-  useEventListener("scroll", (e) => {
+  useEventListener("scroll", () => {
     setPageScrolled(window.scrollY);
   });
 
@@ -34,8 +34,10 @@ function Navbar() {
     <>
       <div
         className={`w-screen ${
-          pageScrolled > 150 ? "h-20" : "h-16"
-        } bg-dark-800/70 flex items-center justify-center backdrop-blur-md px-10 md:px-20 lg:px-40 z-10 fixed top-0 left-0 shadow-md rounded-lg transition-all duration-300`}
+          pageScrolled > 100
+            ? "h-20 bg-dark-800/70 shadow-md backdrop-blur-md"
+            : "h-16"
+        } flex items-center justify-center px-10 md:px-20 lg:px-40 z-10 fixed top-0 left-0 rounded-lg transition-all duration-300`}
       >
         <div className="flex items-center justify-between w-full h-full">
           <Link
