@@ -54,7 +54,7 @@ function Navbar() {
           <div
             className={`absolute lg:static top-0 ${
               sidebaropen ? "left-0" : "left-[100%]"
-            } h-screen lg:h-auto flex items-center p-10 sm:p-20 md:p-30 lg:p-52 w-screen bg-dark-900 lg:bg-transparent z-50 transition-all duration-300`}
+            } h-screen lg:h-auto flex items-center p-10 sm:p-20 md:p-30 w-screen bg-dark-900 lg:bg-transparent z-50 transition-all duration-300`}
           >
             <button
               onClick={() => setSidebaropen(false)}
