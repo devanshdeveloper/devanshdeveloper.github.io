@@ -23,7 +23,7 @@ function Project() {
         <h3 className="section-heading">{project.title}</h3>
         <div className="max-w-2xl">
           <Image
-            src={`/${project.title}.png`}
+            src={`/projects/${project.title}.png`}
             width="600"
             height="300"
             className="w-full rounded-lg"
@@ -34,7 +34,7 @@ function Project() {
           {project.techStack.map((tech, i) => (
             <div key={i} className="bg-dark-700 inline-block px-3 py-1 rounded">
               <Image
-                src={`/${tech}.svg`}
+                src={`/techstack/${tech}.svg`}
                 width="100"
                 height="100"
                 alt={tech}
