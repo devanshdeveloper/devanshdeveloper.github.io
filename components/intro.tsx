@@ -5,10 +5,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { IoNewspaperOutline } from "react-icons/io5";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -67,7 +67,6 @@ export default function Intro() {
         building <span className="italic">sites & apps</span>. My focus is {" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
-
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -88,6 +87,14 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.05] hover:scale-[1.05] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="/Devansh Khetwani Resume V1.pdf"
+          target="_blank"
+          download
+        >
+         Download <IoNewspaperOutline />
+        </a>
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com/in/devansh-khetwani"
