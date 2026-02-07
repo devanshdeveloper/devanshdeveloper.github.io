@@ -9,7 +9,7 @@ export const projectsData = [
       "/v2/projects/Next Web Campus.png",
     ],
     projectUrl: "https://erp.nextwebworks.in/campus",
-    // githubUrl: "https://github.com/devanshdeveloper/nextwebcampus",
+    githubUrl: "",
     caseStudy: {
       problem:
         "Educational institutions struggle with manual administrative workflows, scattered student and staff data, and a lack of centralized reporting, leading to inefficiencies and errors.",

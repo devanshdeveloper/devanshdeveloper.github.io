@@ -181,13 +181,15 @@ export default function CaseStudyModal({
                   >
                     Live Demo <IoOpenOutline />
                   </a>
-                  <a
-                    href={selectedProject.githubUrl}
-                    target="_blank"
-                    className="flex items-center gap-2 bg-white border border-gray-200 text-gray-900 px-5 py-2 rounded-full font-medium hover:bg-gray-50 transition"
-                  >
-                    Code <BsGithub />
-                  </a>
+                  {selectedProject.githubUrl && (
+                    <a
+                      href={selectedProject.githubUrl}
+                      target="_blank"
+                      className="flex items-center gap-2 bg-white border border-gray-200 text-gray-900 px-5 py-2 rounded-full font-medium hover:bg-gray-50 transition"
+                    >
+                      Code <BsGithub />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
