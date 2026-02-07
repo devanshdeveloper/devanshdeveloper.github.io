@@ -11,27 +11,103 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        My journey started in 2020 when I was 15 years old, during my 10th-grade
-        year. It began with creating a basic calculator in JavaScript. Since
-        then, coding has become my passion. I&apos;ve worked with various
-        programming languages, including JavaScript, TypeScript, PHP, C, C++,
-        and Java and I&apos;m continually learning more. I have experience with
-        frameworks and libraries such as ReactJS, Next.js, Express.js,
-        Discord.js, and many others. I consider myself a self-taught developer,
-        a quick learner, a community helper, and a coder driven by curiosity and
-        passion.
-        <br /> <br />
-        Currently, I&apos;m building a web application using Next.js, Tailwind
-        CSS, and Prisma, which is a trending tech stack.
-      </p>
+
+      <div className="flex flex-col gap-4 text-center mb-16">
+        <p className="text-xl font-medium leading-relaxed">
+          I started coding in 2020. Since then, I've moved from building small
+          sites to architecting complex full-stack applications.
+        </p>
+        <p className="text-gray-700">
+          Today, I work as a full stack developer building production web
+          applications using React, Next.js, and Node.js. My focus is always on
+          code quality, scalability, and user experience.
+        </p>
+      </div>
+
+      <div className="bg-white borderBlack rounded-lg p-8 shadow-sm">
+        <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
+          <span className="text-2xl">🛠️</span> How I Work
+        </h3>
+
+        <div className="space-y-6">
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm">
+                1
+              </div>
+              <div className="w-0.5 h-full bg-gray-200 mt-2"></div>
+            </div>
+            <div>
+              <h4 className="font-medium text-lg">Understanding First</h4>
+              <p className="text-gray-600">
+                I dive deep into the problem before writing a single line of
+                code.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm">
+                2
+              </div>
+              <div className="w-0.5 h-full bg-gray-200 mt-2"></div>
+            </div>
+            <div>
+              <h4 className="font-medium text-lg">Simple Solutions</h4>
+              <p className="text-gray-600">
+                I design practical architectures that avoid unnecessary
+                complexity.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm">
+                3
+              </div>
+              <div className="w-0.5 h-full bg-gray-200 mt-2"></div>
+            </div>
+            <div>
+              <h4 className="font-medium text-lg">Iterative Build</h4>
+              <p className="text-gray-600">
+                I build in small, testable steps to ensure stability.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex flex-col items-center">
+              <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm">
+                4
+              </div>
+            </div>
+            <div>
+              <h4 className="font-medium text-lg">Continuous Refactoring</h4>
+              <p className="text-gray-600">
+                I constantly improve code structure and document key decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-16 text-center">
+        <h3 className="text-lg font-medium mb-2">What I’m Looking For</h3>
+        <p className="text-gray-600 max-w-xl mx-auto">
+          Opportunities to work with teams and clients who value quality,
+          long-term thinking, and building meaningful products that solve real
+          problems.
+        </p>
+      </div>
     </motion.section>
   );
 }

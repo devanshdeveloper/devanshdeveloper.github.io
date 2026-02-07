@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: https://devanshdeveloper.github.io
+Sitemap: https://devanshdeveloper.github.io/sitemap.xml

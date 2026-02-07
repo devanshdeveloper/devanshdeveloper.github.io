@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/profile.jpg"
+              src="/v2/profile.jpg"
               alt="Devansh Khetwani"
               width="192"
               height="192"
@@ -62,11 +62,23 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Devansh.</span> I&apos;m a {" "}
-        <span className="font-bold">full-stack developer. </span> I enjoy {" "}
-        building <span className="italic">sites & apps</span>. My focus is {" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Full Stack Developer</span> who builds{" "}
+        <span className="font-bold">
+          scalable, production-ready web applications
+        </span>
       </motion.h1>
+
+      <motion.p
+        className="mb-10 px-4 text-lg font-medium !leading-[1.5] sm:text-xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        I help founders, startups, and teams turn ideas into reliable web
+        products. From clean user interfaces to scalable backend systems and
+        production deployment, I build applications that are designed to work in
+        the real world — not just in demos.
+      </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
@@ -83,20 +95,20 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Start a Conversation{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.05] hover:scale-[1.05] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.05] hover:scale-[1.05] active:scale-105 transition cursor-pointer borderBlack"
           href="/Devansh Khetwani Resume V1.pdf"
           target="_blank"
           download
         >
-         Download <IoNewspaperOutline />
+          Download <IoNewspaperOutline />
         </a>
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack"
           href="https://linkedin.com/in/devansh-khetwani"
           target="_blank"
         >
@@ -104,7 +116,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
           href="https://github.com/devanshdeveloper"
           target="_blank"
         >
